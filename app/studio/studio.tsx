@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import Markdown from "react-markdown";
+import { RichTextEditor } from "@/components/rich-text-editor";
 import { Icon } from "@/components/icon";
 
 type Post = {
@@ -49,7 +49,7 @@ export default function Studio({
   const [isNew, setIsNew] = useState(!initialPosts.length);
   const [dirty, setDirty] = useState(false);
   const [saving, setSaving] = useState(false);
-  const [preview, setPreview] = useState(false);
+  const [editorKey, setEditorKey] = useState(0);
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
   const [slugEdited, setSlugEdited] = useState(false);
@@ -80,13 +80,13 @@ export default function Studio({
 
   function select(next: Post, create = false) {
     if (dirty && !window.confirm("Discard your unsaved changes?")) return;
+    setEditorKey((key) => key + 1);
     setPost(next);
     setIsNew(create);
     setDirty(false);
     setMessage("");
     setError("");
     setSlugEdited(false);
-    setPreview(false);
   }
 
   async function save(published: boolean) {
@@ -135,6 +135,16 @@ export default function Studio({
           <span aria-hidden="true">✳</span>
         </Link>
         <div className="studio-caption">Your publication</div>
+        <Link
+          className="studio-design-link"
+          href="/examples"
+          onClick={(event) => {
+            if (dirty && !window.confirm("Leave with unsaved changes?"))
+              event.preventDefault();
+          }}
+        >
+          <Icon name="preview" size={16} /> Newsletter designs
+        </Link>
         <button
           className="button new-post"
           onClick={() => select(blank(), true)}
@@ -196,14 +206,6 @@ export default function Studio({
             </span>
           </div>
           <div className="toolbar-actions">
-            <button
-              className="button ghost"
-              onClick={() => setPreview(!preview)}
-              aria-pressed={preview}
-            >
-              <Icon name={preview ? "edit" : "preview"} />
-              {preview ? "Write" : "Preview"}
-            </button>
             {!post.published && (
               <button
                 className="button secondary"
@@ -248,129 +250,104 @@ export default function Studio({
           )}
         </div>
         <div className="editor-canvas">
-          {preview ? (
-            <article className="editor-preview">
-              <p className="eyebrow">Preview · {post.authors.join(" & ")}</p>
-              <h1>{post.title || "Untitled post"}</h1>
-              <p className="article-deck">{post.description}</p>
-              <div className="prose">
-                <Markdown>
-                  {post.body || "Your writing will appear here."}
-                </Markdown>
-              </div>
-            </article>
-          ) : (
-            <>
-              <label className="sr-only" htmlFor="post-title">
-                Title
+          <label className="sr-only" htmlFor="post-title">
+            Title
+          </label>
+          <input
+            id="post-title"
+            className="title-input"
+            placeholder="Give your idea a title"
+            maxLength={200}
+            value={post.title}
+            onChange={(event) => update("title", event.target.value)}
+            disabled={saving}
+          />
+          <label className="sr-only" htmlFor="post-description">
+            Description
+          </label>
+          <textarea
+            id="post-description"
+            className="description-input"
+            placeholder="A sentence to draw your reader in…"
+            maxLength={600}
+            value={post.description}
+            onChange={(event) => update("description", event.target.value)}
+            disabled={saving}
+            rows={2}
+          />
+          <fieldset className="post-properties" disabled={saving}>
+            <legend>Post details</legend>
+            <div className="details-grid">
+              <label>
+                Authors{" "}
+                <input
+                  value={post.authors.join(", ")}
+                  onChange={(event) =>
+                    update("authors", event.target.value.split(","))
+                  }
+                  disabled={saving}
+                  placeholder="Separate names with commas"
+                />
               </label>
-              <input
-                id="post-title"
-                className="title-input"
-                placeholder="Give your idea a title"
-                maxLength={200}
-                value={post.title}
-                onChange={(event) => update("title", event.target.value)}
-                disabled={saving}
-              />
-              <label className="sr-only" htmlFor="post-description">
-                Description
+              <label>
+                Date{" "}
+                <input
+                  type="date"
+                  value={post.date}
+                  onChange={(event) => update("date", event.target.value)}
+                  disabled={saving}
+                />
               </label>
-              <textarea
-                id="post-description"
-                className="description-input"
-                placeholder="A sentence to draw your reader in…"
-                maxLength={600}
-                value={post.description}
-                onChange={(event) => update("description", event.target.value)}
-                disabled={saving}
-                rows={2}
-              />
-              <details className="post-details">
-                <summary>
-                  Post details <span>{post.authors.join(" & ")}</span>
-                </summary>
-                <div className="details-grid">
-                  <label>
-                    Authors{" "}
-                    <input
-                      value={post.authors.join(", ")}
-                      onChange={(event) =>
-                        update("authors", event.target.value.split(","))
-                      }
-                      disabled={saving}
-                      placeholder="Separate names with commas"
-                    />
-                  </label>
-                  <label>
-                    Date{" "}
-                    <input
-                      type="date"
-                      value={post.date}
-                      onChange={(event) => update("date", event.target.value)}
-                      disabled={saving}
-                    />
-                  </label>
-                  <label className="slug-field">
-                    Post URL{" "}
-                    <div className="slug-input">
-                      <span>/posts/</span>
-                      <input
-                        value={post.slug}
-                        onChange={(event) => {
-                          setSlugEdited(true);
-                          update("slug", event.target.value);
-                        }}
-                        disabled={saving || !isNew}
-                        placeholder="your-post-title"
-                      />
-                    </div>
-                    <small>
-                      {isNew
-                        ? "Lowercase letters, numbers, and hyphens."
-                        : "The URL stays fixed after the first save."}
-                    </small>
-                  </label>
-                </div>
-              </details>
-              <div className="writing-label">
-                <label htmlFor="post-body">Your writing</label>
-                <span>Markdown · # heading · **bold** · [text](url)</span>
-              </div>
-              <textarea
-                id="post-body"
-                className="body-input"
-                value={post.body}
-                onChange={(event) => update("body", event.target.value)}
-                disabled={saving}
-                placeholder="Start with the thought you keep coming back to…"
-                maxLength={100000}
-                spellCheck
-              />
-              <div className="editor-bottom">
-                <span>
-                  {post.body.trim() ? post.body.trim().split(/\s+/).length : 0}{" "}
-                  words
-                </span>
-                {post.published && (
-                  <button
-                    className="text-button"
-                    disabled={saving}
-                    onClick={() => {
-                      if (
-                        window.confirm(
-                          "Move this post to drafts? It will disappear from your local website.",
-                        )
-                      )
-                        void save(false);
+              <label className="slug-field">
+                Post URL{" "}
+                <div className="slug-input">
+                  <span>/posts/</span>
+                  <input
+                    value={post.slug}
+                    onChange={(event) => {
+                      setSlugEdited(true);
+                      update("slug", event.target.value);
                     }}
-                  >
-                    Move to drafts
-                  </button>
-                )}
-              </div>
-            </>
-          )}
+                    disabled={saving || !isNew}
+                    placeholder="your-post-title"
+                  />
+                </div>
+                <small>
+                  {isNew
+                    ? "Lowercase letters, numbers, and hyphens."
+                    : "The URL stays fixed after the first save."}
+                </small>
+              </label>
+            </div>
+          </fieldset>
+          <RichTextEditor
+            key={editorKey}
+            value={post.body}
+            onChange={(value) => update("body", value)}
+            disabled={saving}
+          />
+          <div className="editor-bottom">
+            <span>
+              {post.body.trim() ? post.body.trim().split(/\s+/).length : 0}{" "}
+              words
+            </span>
+            {post.published && (
+              <button
+                className="text-button"
+                disabled={saving}
+                onClick={() => {
+                  if (
+                    window.confirm(
+                      "Move this post to drafts? It will disappear from your local website.",
+                    )
+                  )
+                    void save(false);
+                }}
+              >
+                Move to drafts
+              </button>
+            )}
+          </div>
         </div>
       </main>
     </div>

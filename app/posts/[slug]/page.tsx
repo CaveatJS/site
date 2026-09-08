@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import Markdown from "react-markdown";
+import { PostContent } from "@/components/post-content";
 import { Header, Footer, DateLabel } from "@/components/shell";
 import { getPosts, readTime } from "@/lib/posts.mjs";
 import { Icon } from "@/components/icon";
@@ -54,7 +54,7 @@ export default async function Article({
             <p className="article-byline">By {post.authors.join(" & ")}</p>
           </header>
           <div className="prose">
-            <Markdown>{post.body}</Markdown>
+            <PostContent>{post.body}</PostContent>
           </div>
           <div className="article-end">
             <span className="asterisk" aria-hidden="true">

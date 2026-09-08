@@ -1,0 +1,15 @@
+{
+  "existingFonts": "https://github.com/google/fonts",
+  "addedFonts": [
+    {
+      "family": "Radley",
+      "css": "https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap",
+      "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/radley/OFL.txt"
+    },
+    {
+      "family": "Radio Canada Big",
+      "css": "https://fonts.googleapis.com/css2?family=Radio+Canada+Big:wght@400;500;600;700&display=swap",
+      "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/radiocanadabig/OFL.txt"
+    }
+  ]
+}

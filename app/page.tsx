@@ -4,11 +4,16 @@ import { getPosts, readTime } from "@/lib/posts.mjs";
 import { site } from "@/site.config";
 import { Icon } from "@/components/icon";
 
+import { readAppearance } from "@/lib/appearance";
+import { getDesign } from "@/lib/newsletter-designs";
+
 export default async function Home() {
+  const appearance = await readAppearance();
+  const design = getDesign(appearance.design)!;
   const posts = await getPosts();
   const [featured, ...rest] = posts;
   return (
-    <div className="site-wrap">
+    <div className="site-wrap newsletter-frame" data-layout={design.layout}>
       <Header />
       <main id="main">
         <section className="journal-intro">

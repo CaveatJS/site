@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { site } from "@/site.config";
 import "./globals.css";
+import "./newsletter-fonts.css";
+import "./newsletter-designs.css";
+import { readAppearance } from "@/lib/appearance";
+import { getDesign, designStyle } from "@/lib/newsletter-designs";
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
@@ -9,14 +13,16 @@ export const metadata: Metadata = {
   alternates: { types: { "application/rss+xml": "/rss.xml" } },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const appearance = await readAppearance();
+  const design = getDesign(appearance.design)!;
   return (
     <html lang="en">
-      <body>
+      <body style={designStyle(design, appearance.font)}>
         <a className="skip-link" href="#main">
           Skip to content
         </a>

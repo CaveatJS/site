@@ -17,12 +17,12 @@ npm run dev
 
 Open [localhost:3000](http://localhost:3000) for your publication, or [localhost:3000/studio](http://localhost:3000/studio) for the editor. The terminal prints the port if 3000 is already in use.
 
-In the editor, create a post, enter a title and some writing, then choose **Save draft** or **Publish to website**. Preview renders your Markdown before you publish. Publication here means updating your local website; deploy again to update a hosted copy.
+In the editor, create a post, enter a title and some writing, then choose **Save draft** or **Publish to website**. Format headings, emphasis, lists, and links directly in the writing area; the page stays editable as you work. Publication here means updating your local website; deploy again to update a hosted copy.
 
 ## What's included
 
 - A responsive publication homepage, article pages, and about page.
-- A local browser editor with Markdown preview, draft/published status, and multiple author credits.
+- A local browser editor with in-place rich-text formatting, draft/published status, and multiple author credits.
 - Posts saved as portable `.md` files in `content/posts`. They survive restarts and can be edited directly in your favourite editor.
 - An RSS feed at `/rss.xml`, with drafts excluded from public pages and the feed.
 - Sample essays and a private draft to help you get started.
@@ -60,18 +60,18 @@ Captured from the local Markdown starter with its bundled sample posts.
 
 ### Write and manage posts
 
-Keep drafts and published essays together. Edit your writing, author credits, publication date, and post URL in the browser.
+Keep drafts and published essays together. Format your writing directly on the page, with headings, emphasis, lists, links, and undo. Edit author credits, publication date, and post URL in the browser.
 
-![Caveat editor showing draft and published posts, author credits, date, URL, and Markdown writing](https://raw.githubusercontent.com/CaveatJS/site/main/docs/screenshots/editor.png)
-
-### Preview your writing
-
-Switch to Preview to see headings, links, inline code, and quotations rendered before publishing to your local website.
-
-![Caveat Markdown preview rendering an essay with headings, inline code, and a quotation](https://raw.githubusercontent.com/CaveatJS/site/main/docs/screenshots/preview.png)
+![Caveat rich-text editor with formatted headings, a quotation, and the Hugeicons formatting toolbar](https://raw.githubusercontent.com/CaveatJS/site/main/docs/screenshots/editor.png)
 
 ### Give every essay a home
 
 A dedicated reading page brings together the title, description, author, date, reading time, and article text.
 
 ![Caveat article page with its title, author, reading time, and essay typography](https://raw.githubusercontent.com/CaveatJS/site/main/docs/screenshots/article.png)
+
+## Newsletter designs
+
+Open /examples to preview eight newsletter designs and ten reading fonts. In the local editor, choose **Newsletter designs**, preview a font, then choose **Use this design**. This changes your publication layout, palette, and reading font, including the editor; existing writing stays in place. The selection is saved to content/appearance.json and is included when you deploy the project. Public deployments allow previews but cannot write to your local project.
+
+Included fonts: Source Serif 4, Radley, Inter, Palatino (system font), Radio Canada Big, Lato, Alegreya, Newsreader, Lora, and Libre Baskerville. Downloadable fonts are self-hosted, with licences in public/fonts.

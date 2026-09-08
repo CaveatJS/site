@@ -12,6 +12,7 @@ export function Header() {
       <nav aria-label="Main navigation">
         <Link href="/">Journal</Link>
         <Link href="/about">About</Link>
+        <Link href="/examples">Designs</Link>
         <a href="/rss.xml">
           <Icon name="rss" size={16} /> RSS
         </a>
