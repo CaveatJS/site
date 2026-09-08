@@ -76,8 +76,9 @@ export default function Compare() {
             Your next chapter.
           </h2>
           <p>
-            Choose your type and accent colour. Export posts and subscribers,
-            and keep the code and connected accounts in your hands.
+            Explore six example designs, choose your type and accent colour, or
+            copy a design prompt for your AI coding tool. Edit the React and CSS
+            to make the layout your own.
           </p>
         </article>
       </section>
@@ -164,6 +165,12 @@ export default function Compare() {
             <p>
               A focused publication you can shape yourself. Choose Caveat for
               control of the code, deployment, and connected services.
+            </p>
+            <p>
+              Start with an example or your own brief. The copied prompt guides
+              an external coding tool through creating a Caveat project and
+              changing its branding and layout; copying it does not deploy a
+              site or change your posts.
             </p>
             <Link href="/why-caveat">Meet Caveat</Link>
           </article>

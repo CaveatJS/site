@@ -6,6 +6,10 @@ import {
 } from "@/lib/publication-fonts";
 import styles from "./compare.module.css";
 
+const googleFontCount = publicationFonts.filter(
+  (font) => font.source === "google",
+).length;
+
 const platforms = [
   { id: "caveat", name: "Caveat", note: "Your own workspace", href: "/docs" },
   {
@@ -40,14 +44,14 @@ const groups = [
       ],
       [
         "Content blocks",
-        "Five reusable blocks|Callout, pull quote, button, link card, and divider.",
+        "Five reusable blocks|Callout, pull quote, button, link card, and divider. Community contributions through GitHub.",
         "Media embeds",
         "Rich media cards",
         "Email builder",
       ],
       [
         "Make it your own",
-        "10 reading styles|Live type preview and accent colours; code you can customise.",
+        `${googleFontCount} Google Fonts + two system styles|Search, live preview, accent colours, and editable React/CSS.`,
         "Publication design settings|Built-in font choices.",
         "Themes + design settings|Custom themes depend on hosting plan.",
         "Website + email templates|Some customisation is plan-dependent.",
@@ -333,7 +337,8 @@ export function ReadingPreview() {
         </fieldset>
       </div>
       <p className={styles.specimenFootnote}>
-        Your voice, in {publicationFonts.length} reading styles. Try one.
+        {googleFontCount} Google Fonts and two system styles. Try one here;
+        search the full library in Settings.
       </p>
     </div>
   );
