@@ -1,0 +1,602 @@
+[
+  {
+    "id": "lora",
+    "name": "Lora",
+    "kind": "serif",
+    "recommended": true
+  },
+  {
+    "id": "newsreader",
+    "name": "Newsreader",
+    "kind": "serif",
+    "recommended": true
+  },
+  {
+    "id": "source-serif",
+    "name": "Source Serif 4",
+    "kind": "serif",
+    "recommended": true
+  },
+  {
+    "id": "libre-baskerville",
+    "name": "Libre Baskerville",
+    "kind": "serif",
+    "recommended": true
+  },
+  {
+    "id": "playfair",
+    "name": "Playfair Display",
+    "kind": "serif",
+    "recommended": true
+  },
+  {
+    "id": "merriweather",
+    "name": "Merriweather",
+    "kind": "serif",
+    "recommended": false
+  },
+  {
+    "id": "crimson-pro",
+    "name": "Crimson Pro",
+    "kind": "serif",
+    "recommended": false
+  },
+  {
+    "id": "crimson-text",
+    "name": "Crimson Text",
+    "kind": "serif",
+    "recommended": false
+  },
+  {
+    "id": "literata",
+    "name": "Literata",
+    "kind": "serif",
+    "recommended": true
+  },
+  {
+    "id": "spectral",
+    "name": "Spectral",
+    "kind": "serif",
+    "recommended": false
+  },
+  {
+    "id": "eb-garamond",
+    "name": "EB Garamond",
+    "kind": "serif",
+    "recommended": false
+  },
+  {
+    "id": "cormorant-garamond",
+    "name": "Cormorant Garamond",
+    "kind": "serif",
+    "recommended": false
+  },
+  {
+    "id": "pt-serif",
+    "name": "PT Serif",
+    "kind": "serif",
+    "recommended": false
+  },
+  {
+    "id": "noto-serif",
+    "name": "Noto Serif",
+    "kind": "serif",
+    "recommended": false
+  },
+  {
+    "id": "bitter",
+    "name": "Bitter",
+    "kind": "serif",
+    "recommended": false
+  },
+  {
+    "id": "vollkorn",
+    "name": "Vollkorn",
+    "kind": "serif",
+    "recommended": false
+  },
+  {
+    "id": "alegreya",
+    "name": "Alegreya",
+    "kind": "serif",
+    "recommended": false
+  },
+  {
+    "id": "libre-caslon-text",
+    "name": "Libre Caslon Text",
+    "kind": "serif",
+    "recommended": false
+  },
+  {
+    "id": "libre-caslon-display",
+    "name": "Libre Caslon Display",
+    "kind": "serif",
+    "recommended": false
+  },
+  {
+    "id": "dm-serif-display",
+    "name": "DM Serif Display",
+    "kind": "serif",
+    "recommended": false
+  },
+  {
+    "id": "dm-serif-text",
+    "name": "DM Serif Text",
+    "kind": "serif",
+    "recommended": false
+  },
+  {
+    "id": "instrument-serif",
+    "name": "Instrument Serif",
+    "kind": "serif",
+    "recommended": true
+  },
+  {
+    "id": "fraunces",
+    "name": "Fraunces",
+    "kind": "serif",
+    "recommended": false
+  },
+  {
+    "id": "bodoni-moda",
+    "name": "Bodoni Moda",
+    "kind": "serif",
+    "recommended": false
+  },
+  {
+    "id": "prata",
+    "name": "Prata",
+    "kind": "serif",
+    "recommended": false
+  },
+  {
+    "id": "cardo",
+    "name": "Cardo",
+    "kind": "serif",
+    "recommended": false
+  },
+  {
+    "id": "gelasio",
+    "name": "Gelasio",
+    "kind": "serif",
+    "recommended": false
+  },
+  {
+    "id": "lusitana",
+    "name": "Lusitana",
+    "kind": "serif",
+    "recommended": false
+  },
+  {
+    "id": "domine",
+    "name": "Domine",
+    "kind": "serif",
+    "recommended": false
+  },
+  {
+    "id": "zilla-slab",
+    "name": "Zilla Slab",
+    "kind": "serif",
+    "recommended": false
+  },
+  {
+    "id": "roboto-slab",
+    "name": "Roboto Slab",
+    "kind": "serif",
+    "recommended": false
+  },
+  {
+    "id": "arvo",
+    "name": "Arvo",
+    "kind": "serif",
+    "recommended": false
+  },
+  {
+    "id": "noticia-text",
+    "name": "Noticia Text",
+    "kind": "serif",
+    "recommended": false
+  },
+  {
+    "id": "neuton",
+    "name": "Neuton",
+    "kind": "serif",
+    "recommended": false
+  },
+  {
+    "id": "old-standard-tt",
+    "name": "Old Standard TT",
+    "kind": "serif",
+    "recommended": false
+  },
+  {
+    "id": "dm-sans",
+    "name": "DM Sans",
+    "kind": "sans",
+    "recommended": true
+  },
+  {
+    "id": "manrope",
+    "name": "Manrope",
+    "kind": "sans",
+    "recommended": true
+  },
+  {
+    "id": "source-sans",
+    "name": "Source Sans 3",
+    "kind": "sans",
+    "recommended": true
+  },
+  {
+    "id": "inter",
+    "name": "Inter",
+    "kind": "sans",
+    "recommended": true
+  },
+  {
+    "id": "roboto",
+    "name": "Roboto",
+    "kind": "sans",
+    "recommended": false
+  },
+  {
+    "id": "open-sans",
+    "name": "Open Sans",
+    "kind": "sans",
+    "recommended": false
+  },
+  {
+    "id": "lato",
+    "name": "Lato",
+    "kind": "sans",
+    "recommended": false
+  },
+  {
+    "id": "montserrat",
+    "name": "Montserrat",
+    "kind": "sans",
+    "recommended": false
+  },
+  {
+    "id": "poppins",
+    "name": "Poppins",
+    "kind": "sans",
+    "recommended": false
+  },
+  {
+    "id": "raleway",
+    "name": "Raleway",
+    "kind": "sans",
+    "recommended": false
+  },
+  {
+    "id": "work-sans",
+    "name": "Work Sans",
+    "kind": "sans",
+    "recommended": false
+  },
+  {
+    "id": "nunito-sans",
+    "name": "Nunito Sans",
+    "kind": "sans",
+    "recommended": false
+  },
+  {
+    "id": "nunito",
+    "name": "Nunito",
+    "kind": "sans",
+    "recommended": false
+  },
+  {
+    "id": "rubik",
+    "name": "Rubik",
+    "kind": "sans",
+    "recommended": false
+  },
+  {
+    "id": "karla",
+    "name": "Karla",
+    "kind": "sans",
+    "recommended": false
+  },
+  {
+    "id": "figtree",
+    "name": "Figtree",
+    "kind": "sans",
+    "recommended": true
+  },
+  {
+    "id": "plus-jakarta-sans",
+    "name": "Plus Jakarta Sans",
+    "kind": "sans",
+    "recommended": false
+  },
+  {
+    "id": "outfit",
+    "name": "Outfit",
+    "kind": "sans",
+    "recommended": false
+  },
+  {
+    "id": "sora",
+    "name": "Sora",
+    "kind": "sans",
+    "recommended": false
+  },
+  {
+    "id": "space-grotesk",
+    "name": "Space Grotesk",
+    "kind": "sans",
+    "recommended": false
+  },
+  {
+    "id": "instrument-sans",
+    "name": "Instrument Sans",
+    "kind": "sans",
+    "recommended": false
+  },
+  {
+    "id": "geist",
+    "name": "Geist",
+    "kind": "sans",
+    "recommended": false
+  },
+  {
+    "id": "public-sans",
+    "name": "Public Sans",
+    "kind": "sans",
+    "recommended": false
+  },
+  {
+    "id": "ibm-plex-sans",
+    "name": "IBM Plex Sans",
+    "kind": "sans",
+    "recommended": false
+  },
+  {
+    "id": "barlow",
+    "name": "Barlow",
+    "kind": "sans",
+    "recommended": false
+  },
+  {
+    "id": "barlow-condensed",
+    "name": "Barlow Condensed",
+    "kind": "sans",
+    "recommended": false
+  },
+  {
+    "id": "quicksand",
+    "name": "Quicksand",
+    "kind": "sans",
+    "recommended": false
+  },
+  {
+    "id": "mulish",
+    "name": "Mulish",
+    "kind": "sans",
+    "recommended": false
+  },
+  {
+    "id": "cabin",
+    "name": "Cabin",
+    "kind": "sans",
+    "recommended": false
+  },
+  {
+    "id": "urbanist",
+    "name": "Urbanist",
+    "kind": "sans",
+    "recommended": false
+  },
+  {
+    "id": "red-hat-display",
+    "name": "Red Hat Display",
+    "kind": "sans",
+    "recommended": false
+  },
+  {
+    "id": "red-hat-text",
+    "name": "Red Hat Text",
+    "kind": "sans",
+    "recommended": false
+  },
+  {
+    "id": "lexend",
+    "name": "Lexend",
+    "kind": "sans",
+    "recommended": false
+  },
+  {
+    "id": "onest",
+    "name": "Onest",
+    "kind": "sans",
+    "recommended": false
+  },
+  {
+    "id": "assistant",
+    "name": "Assistant",
+    "kind": "sans",
+    "recommended": false
+  },
+  {
+    "id": "overpass",
+    "name": "Overpass",
+    "kind": "sans",
+    "recommended": false
+  },
+  {
+    "id": "dosis",
+    "name": "Dosis",
+    "kind": "sans",
+    "recommended": false
+  },
+  {
+    "id": "josefin-sans",
+    "name": "Josefin Sans",
+    "kind": "sans",
+    "recommended": false
+  },
+  {
+    "id": "jost",
+    "name": "Jost",
+    "kind": "sans",
+    "recommended": false
+  },
+  {
+    "id": "hanken-grotesk",
+    "name": "Hanken Grotesk",
+    "kind": "sans",
+    "recommended": false
+  },
+  {
+    "id": "atkinson-hyperlegible",
+    "name": "Atkinson Hyperlegible",
+    "kind": "sans",
+    "recommended": false
+  },
+  {
+    "id": "readex-pro",
+    "name": "Readex Pro",
+    "kind": "sans",
+    "recommended": false
+  },
+  {
+    "id": "noto-sans",
+    "name": "Noto Sans",
+    "kind": "sans",
+    "recommended": false
+  },
+  {
+    "id": "pt-sans",
+    "name": "PT Sans",
+    "kind": "sans",
+    "recommended": false
+  },
+  {
+    "id": "ubuntu",
+    "name": "Ubuntu",
+    "kind": "sans",
+    "recommended": false
+  },
+  {
+    "id": "oswald",
+    "name": "Oswald",
+    "kind": "display",
+    "recommended": false
+  },
+  {
+    "id": "bebas-neue",
+    "name": "Bebas Neue",
+    "kind": "display",
+    "recommended": false
+  },
+  {
+    "id": "anton",
+    "name": "Anton",
+    "kind": "display",
+    "recommended": false
+  },
+  {
+    "id": "archivo-black",
+    "name": "Archivo Black",
+    "kind": "display",
+    "recommended": false
+  },
+  {
+    "id": "abril-fatface",
+    "name": "Abril Fatface",
+    "kind": "display",
+    "recommended": false
+  },
+  {
+    "id": "righteous",
+    "name": "Righteous",
+    "kind": "display",
+    "recommended": false
+  },
+  {
+    "id": "syne",
+    "name": "Syne",
+    "kind": "display",
+    "recommended": false
+  },
+  {
+    "id": "unbounded",
+    "name": "Unbounded",
+    "kind": "display",
+    "recommended": false
+  },
+  {
+    "id": "caveat",
+    "name": "Caveat",
+    "kind": "handwriting",
+    "recommended": false
+  },
+  {
+    "id": "kalam",
+    "name": "Kalam",
+    "kind": "handwriting",
+    "recommended": false
+  },
+  {
+    "id": "patrick-hand",
+    "name": "Patrick Hand",
+    "kind": "handwriting",
+    "recommended": false
+  },
+  {
+    "id": "handlee",
+    "name": "Handlee",
+    "kind": "handwriting",
+    "recommended": false
+  },
+  {
+    "id": "courgette",
+    "name": "Courgette",
+    "kind": "handwriting",
+    "recommended": false
+  },
+  {
+    "id": "pacifico",
+    "name": "Pacifico",
+    "kind": "handwriting",
+    "recommended": false
+  },
+  {
+    "id": "jetbrains-mono",
+    "name": "JetBrains Mono",
+    "kind": "monospace",
+    "recommended": false
+  },
+  {
+    "id": "ibm-plex-mono",
+    "name": "IBM Plex Mono",
+    "kind": "monospace",
+    "recommended": false
+  },
+  {
+    "id": "space-mono",
+    "name": "Space Mono",
+    "kind": "monospace",
+    "recommended": false
+  },
+  {
+    "id": "roboto-mono",
+    "name": "Roboto Mono",
+    "kind": "monospace",
+    "recommended": false
+  },
+  {
+    "id": "source-code-pro",
+    "name": "Source Code Pro",
+    "kind": "monospace",
+    "recommended": false
+  },
+  {
+    "id": "fira-code",
+    "name": "Fira Code",
+    "kind": "monospace",
+    "recommended": false
+  }
+]

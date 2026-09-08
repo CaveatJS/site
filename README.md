@@ -72,6 +72,6 @@ A dedicated reading page brings together the title, description, author, date, r
 
 ## Newsletter designs
 
-Open /examples to preview eight newsletter designs and ten reading fonts. In the local editor, choose **Newsletter designs**, preview a font, then choose **Use this design**. This changes your publication layout, palette, and reading font, including the editor; existing writing stays in place. The selection is saved to content/appearance.json and is included when you deploy the project. Public deployments allow previews but cannot write to your local project.
+Open /examples to preview eight newsletter designs and 104 reading fonts. In the local editor, choose **Newsletter designs**, preview a font, then choose **Use this design**. This changes your publication layout, palette, and reading font, including the editor; existing writing stays in place. The selection is saved to content/appearance.json and is included when you deploy the project. Public deployments allow previews but cannot write to your local project.
 
-Included fonts: Source Serif 4, Radley, Inter, Palatino (system font), Radio Canada Big, Lato, Alegreya, Newsreader, Lora, and Libre Baskerville. Downloadable fonts are self-hosted, with licences in public/fonts.
+The font picker includes the full 100-family library, Radley, Radio Canada Big, and two system stacks (Palatino and Modern). Your seven favourites appear first, with search and category buttons for the complete library. Downloadable fonts are self-hosted, with licences in public/fonts.

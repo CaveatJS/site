@@ -1,6 +1,7 @@
 import type { CSSProperties } from "react";
+import fontCatalogue from "./reading-fonts.json";
 
-export const readingFonts = [
+const curatedFonts = [
   {
     id: "source-serif",
     name: "Source Serif 4",
@@ -57,6 +58,51 @@ export const readingFonts = [
     family: '"Libre Baskerville", Georgia, serif',
   },
 ] as const;
+export type ReadingFont = {
+  id: string;
+  name: string;
+  kind: string;
+  family: string;
+  favourite: boolean;
+};
+const favouriteIds = new Set([
+  "source-serif",
+  "radley",
+  "inter",
+  "palatino",
+  "radio-canada-big",
+  "lato",
+  "alegreya",
+]);
+const fallbacks: Record<string, string> = {
+  serif: "Georgia, serif",
+  sans: "Arial, sans-serif",
+  display: "Georgia, serif",
+  handwriting: "cursive",
+  monospace: "monospace",
+};
+export const readingFonts: ReadingFont[] = [
+  ...curatedFonts.map((font) => ({
+    ...font,
+    favourite: favouriteIds.has(font.id),
+  })),
+  {
+    id: "sans",
+    name: "Modern (system sans)",
+    kind: "sans",
+    family: '"Helvetica Neue", Helvetica, Arial, sans-serif',
+    favourite: false,
+  },
+  ...fontCatalogue
+    .filter((font) => !curatedFonts.some((existing) => existing.id === font.id))
+    .map((font) => ({
+      id: font.id,
+      name: font.name,
+      kind: font.kind,
+      family: '"' + font.name + '", ' + fallbacks[font.kind],
+      favourite: false,
+    })),
+];
 export type Appearance = { design: string; font: string };
 export type NewsletterDesign = {
   id: string;

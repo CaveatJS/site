@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import {
   newsletterDesigns,
+  readingFonts,
   getReadingFont,
   designStyle,
   type Appearance,
@@ -82,12 +83,13 @@ export function DesignGallery({ appearance }: { appearance: Appearance }) {
           <h2>A little change in type. A different feeling.</h2>
           <p>
             Source Serif 4, Radley, Inter, Palatino, Radio Canada Big, Lato,
-            Alegreya, Newsreader, Lora and Libre Baskerville. Try any of them
-            with any design.
+            Alegreya, and the full library of {readingFonts.length} fonts.
+            Search by name, explore a category, and try any font with any
+            design.
           </p>
           <p>
-            Palatino uses the fonts on your device; the other families are
-            included with your site.
+            Palatino and Modern use the fonts on your device; the other families
+            are included with your site.
           </p>
         </div>
       </section>

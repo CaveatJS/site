@@ -5,11 +5,11 @@ import { useRouter } from "next/navigation";
 import {
   designStyle,
   getReadingFont,
-  readingFonts,
   type NewsletterDesign,
   type Appearance,
 } from "@/lib/newsletter-designs";
 import { Icon } from "./icon";
+import { ReadingFontPicker } from "./reading-font-picker";
 export function DesignPreview({
   design,
   appearance,
@@ -93,31 +93,14 @@ export function DesignPreview({
           Your posts stay yours when you apply a design.
         </p>
       </div>
-      <section className="design-fonts" aria-label="Reading font">
-        <p>Choose a reading font — the preview changes as you choose.</p>
-        <div
-          className="design-font-options"
-          role="group"
-          aria-label="Font choices"
-        >
-          {readingFonts.map((f) => (
-            <button
-              key={f.id}
-              aria-pressed={font === f.id}
-              disabled={busy}
-              onClick={() => {
-                setFont(f.id);
-                setMessage("");
-              }}
-            >
-              <span style={{ fontFamily: f.family }} aria-hidden="true">
-                Aa
-              </span>
-              <span>{f.name}</span>
-            </button>
-          ))}
-        </div>
-      </section>
+      <ReadingFontPicker
+        value={font}
+        disabled={busy}
+        onChange={(id) => {
+          setFont(id);
+          setMessage("");
+        }}
+      />
       {message && (
         <p className="design-feedback" role="status">
           {message}{" "}
