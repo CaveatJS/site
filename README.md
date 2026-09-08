@@ -2,6 +2,10 @@
 
 A runnable, open-source publication starter. Your website is the publication; RSS is included, and email can be added later.
 
+![Caveat journal homepage with a featured essay, recent writing, and RSS links](https://raw.githubusercontent.com/CaveatJS/site/main/docs/screenshots/publication.png)
+
+[Explore the editor and reading experience](#screenshots).
+
 ## Start writing
 
 Requires Node.js 20.9 or newer.
@@ -49,3 +53,25 @@ This first release does not include a hosted editor, subscriber database, email 
 npm test
 npm run build
 ```
+
+## Screenshots
+
+Captured from the local Markdown starter with its bundled sample posts.
+
+### Write and manage posts
+
+Keep drafts and published essays together. Edit your writing, author credits, publication date, and post URL in the browser.
+
+![Caveat editor showing draft and published posts, author credits, date, URL, and Markdown writing](https://raw.githubusercontent.com/CaveatJS/site/main/docs/screenshots/editor.png)
+
+### Preview your writing
+
+Switch to Preview to see headings, links, inline code, and quotations rendered before publishing to your local website.
+
+![Caveat Markdown preview rendering an essay with headings, inline code, and a quotation](https://raw.githubusercontent.com/CaveatJS/site/main/docs/screenshots/preview.png)
+
+### Give every essay a home
+
+A dedicated reading page brings together the title, description, author, date, reading time, and article text.
+
+![Caveat article page with its title, author, reading time, and essay typography](https://raw.githubusercontent.com/CaveatJS/site/main/docs/screenshots/article.png)
