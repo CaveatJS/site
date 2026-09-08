@@ -1,0 +1,502 @@
+[
+  {
+    "family": "Abril Fatface",
+    "css": "https://fonts.googleapis.com/css2?family=Abril%20Fatface:wght@400&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/abrilfatface/OFL.txt"
+  },
+  {
+    "family": "Alegreya",
+    "css": "https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/alegreya/OFL.txt"
+  },
+  {
+    "family": "Anton",
+    "css": "https://fonts.googleapis.com/css2?family=Anton:wght@400&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/anton/OFL.txt"
+  },
+  {
+    "family": "Archivo Black",
+    "css": "https://fonts.googleapis.com/css2?family=Archivo%20Black:wght@400&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/archivoblack/OFL.txt"
+  },
+  {
+    "family": "Arvo",
+    "css": "https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/arvo/OFL.txt"
+  },
+  {
+    "family": "Assistant",
+    "css": "https://fonts.googleapis.com/css2?family=Assistant:wght@400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/assistant/OFL.txt"
+  },
+  {
+    "family": "Atkinson Hyperlegible",
+    "css": "https://fonts.googleapis.com/css2?family=Atkinson%20Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/atkinsonhyperlegible/OFL.txt"
+  },
+  {
+    "family": "Barlow",
+    "css": "https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/barlow/OFL.txt"
+  },
+  {
+    "family": "Barlow Condensed",
+    "css": "https://fonts.googleapis.com/css2?family=Barlow%20Condensed:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/barlowcondensed/OFL.txt"
+  },
+  {
+    "family": "Bebas Neue",
+    "css": "https://fonts.googleapis.com/css2?family=Bebas%20Neue:wght@400&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/bebasneue/OFL.txt"
+  },
+  {
+    "family": "Bitter",
+    "css": "https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/bitter/OFL.txt"
+  },
+  {
+    "family": "Bodoni Moda",
+    "css": "https://fonts.googleapis.com/css2?family=Bodoni%20Moda:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/bodonimoda/OFL.txt"
+  },
+  {
+    "family": "Cabin",
+    "css": "https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/cabin/OFL.txt"
+  },
+  {
+    "family": "Cardo",
+    "css": "https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/cardo/OFL.txt"
+  },
+  {
+    "family": "Caveat",
+    "css": "https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/caveat/OFL.txt"
+  },
+  {
+    "family": "Cormorant Garamond",
+    "css": "https://fonts.googleapis.com/css2?family=Cormorant%20Garamond:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/cormorantgaramond/OFL.txt"
+  },
+  {
+    "family": "Courgette",
+    "css": "https://fonts.googleapis.com/css2?family=Courgette:wght@400&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/courgette/OFL.txt"
+  },
+  {
+    "family": "Crimson Pro",
+    "css": "https://fonts.googleapis.com/css2?family=Crimson%20Pro:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/crimsonpro/OFL.txt"
+  },
+  {
+    "family": "Crimson Text",
+    "css": "https://fonts.googleapis.com/css2?family=Crimson%20Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/crimsontext/OFL.txt"
+  },
+  {
+    "family": "DM Sans",
+    "css": "https://fonts.googleapis.com/css2?family=DM%20Sans:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/dmsans/OFL.txt"
+  },
+  {
+    "family": "DM Serif Display",
+    "css": "https://fonts.googleapis.com/css2?family=DM%20Serif%20Display:ital,wght@0,400;1,400&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/dmserifdisplay/OFL.txt"
+  },
+  {
+    "family": "DM Serif Text",
+    "css": "https://fonts.googleapis.com/css2?family=DM%20Serif%20Text:ital,wght@0,400;1,400&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/dmseriftext/OFL.txt"
+  },
+  {
+    "family": "Domine",
+    "css": "https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/domine/OFL.txt"
+  },
+  {
+    "family": "Dosis",
+    "css": "https://fonts.googleapis.com/css2?family=Dosis:wght@400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/dosis/OFL.txt"
+  },
+  {
+    "family": "EB Garamond",
+    "css": "https://fonts.googleapis.com/css2?family=EB%20Garamond:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/ebgaramond/OFL.txt"
+  },
+  {
+    "family": "Figtree",
+    "css": "https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/figtree/OFL.txt"
+  },
+  {
+    "family": "Fira Code",
+    "css": "https://fonts.googleapis.com/css2?family=Fira%20Code:wght@400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/firacode/OFL.txt"
+  },
+  {
+    "family": "Fraunces",
+    "css": "https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/fraunces/OFL.txt"
+  },
+  {
+    "family": "Geist",
+    "css": "https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/geist/OFL.txt"
+  },
+  {
+    "family": "Gelasio",
+    "css": "https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/gelasio/OFL.txt"
+  },
+  {
+    "family": "Handlee",
+    "css": "https://fonts.googleapis.com/css2?family=Handlee:wght@400&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/handlee/OFL.txt"
+  },
+  {
+    "family": "Hanken Grotesk",
+    "css": "https://fonts.googleapis.com/css2?family=Hanken%20Grotesk:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/hankengrotesk/OFL.txt"
+  },
+  {
+    "family": "IBM Plex Mono",
+    "css": "https://fonts.googleapis.com/css2?family=IBM%20Plex%20Mono:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/ibmplexmono/OFL.txt"
+  },
+  {
+    "family": "IBM Plex Sans",
+    "css": "https://fonts.googleapis.com/css2?family=IBM%20Plex%20Sans:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/ibmplexsans/OFL.txt"
+  },
+  {
+    "family": "Instrument Sans",
+    "css": "https://fonts.googleapis.com/css2?family=Instrument%20Sans:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/instrumentsans/OFL.txt"
+  },
+  {
+    "family": "Instrument Serif",
+    "css": "https://fonts.googleapis.com/css2?family=Instrument%20Serif:ital,wght@0,400;1,400&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/instrumentserif/OFL.txt"
+  },
+  {
+    "family": "Inter",
+    "css": "https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/inter/OFL.txt"
+  },
+  {
+    "family": "JetBrains Mono",
+    "css": "https://fonts.googleapis.com/css2?family=JetBrains%20Mono:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/jetbrainsmono/OFL.txt"
+  },
+  {
+    "family": "Josefin Sans",
+    "css": "https://fonts.googleapis.com/css2?family=Josefin%20Sans:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/josefinsans/OFL.txt"
+  },
+  {
+    "family": "Jost",
+    "css": "https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/jost/OFL.txt"
+  },
+  {
+    "family": "Kalam",
+    "css": "https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/kalam/OFL.txt"
+  },
+  {
+    "family": "Karla",
+    "css": "https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/karla/OFL.txt"
+  },
+  {
+    "family": "Lato",
+    "css": "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/lato/OFL.txt"
+  },
+  {
+    "family": "Lexend",
+    "css": "https://fonts.googleapis.com/css2?family=Lexend:wght@400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/lexend/OFL.txt"
+  },
+  {
+    "family": "Libre Baskerville",
+    "css": "https://fonts.googleapis.com/css2?family=Libre%20Baskerville:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/librebaskerville/OFL.txt"
+  },
+  {
+    "family": "Libre Caslon Display",
+    "css": "https://fonts.googleapis.com/css2?family=Libre%20Caslon%20Display:wght@400&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/librecaslondisplay/OFL.txt"
+  },
+  {
+    "family": "Libre Caslon Text",
+    "css": "https://fonts.googleapis.com/css2?family=Libre%20Caslon%20Text:ital,wght@0,400;0,700;1,400&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/librecaslontext/OFL.txt"
+  },
+  {
+    "family": "Literata",
+    "css": "https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/literata/OFL.txt"
+  },
+  {
+    "family": "Lora",
+    "css": "https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/lora/OFL.txt"
+  },
+  {
+    "family": "Lusitana",
+    "css": "https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/lusitana/OFL.txt"
+  },
+  {
+    "family": "Manrope",
+    "css": "https://fonts.googleapis.com/css2?family=Manrope:wght@400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/manrope/OFL.txt"
+  },
+  {
+    "family": "Merriweather",
+    "css": "https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/merriweather/OFL.txt"
+  },
+  {
+    "family": "Montserrat",
+    "css": "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/montserrat/OFL.txt"
+  },
+  {
+    "family": "Mulish",
+    "css": "https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/mulish/OFL.txt"
+  },
+  {
+    "family": "Neuton",
+    "css": "https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,400;0,700;1,400&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/neuton/OFL.txt"
+  },
+  {
+    "family": "Newsreader",
+    "css": "https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/newsreader/OFL.txt"
+  },
+  {
+    "family": "Noticia Text",
+    "css": "https://fonts.googleapis.com/css2?family=Noticia%20Text:ital,wght@0,400;0,700;1,400;1,700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/noticiatext/OFL.txt"
+  },
+  {
+    "family": "Noto Sans",
+    "css": "https://fonts.googleapis.com/css2?family=Noto%20Sans:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/notosans/OFL.txt"
+  },
+  {
+    "family": "Noto Serif",
+    "css": "https://fonts.googleapis.com/css2?family=Noto%20Serif:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/notoserif/OFL.txt"
+  },
+  {
+    "family": "Nunito",
+    "css": "https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/nunito/OFL.txt"
+  },
+  {
+    "family": "Nunito Sans",
+    "css": "https://fonts.googleapis.com/css2?family=Nunito%20Sans:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/nunitosans/OFL.txt"
+  },
+  {
+    "family": "Old Standard TT",
+    "css": "https://fonts.googleapis.com/css2?family=Old%20Standard%20TT:ital,wght@0,400;0,700;1,400&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/oldstandardtt/OFL.txt"
+  },
+  {
+    "family": "Onest",
+    "css": "https://fonts.googleapis.com/css2?family=Onest:wght@400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/onest/OFL.txt"
+  },
+  {
+    "family": "Open Sans",
+    "css": "https://fonts.googleapis.com/css2?family=Open%20Sans:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/opensans/OFL.txt"
+  },
+  {
+    "family": "Oswald",
+    "css": "https://fonts.googleapis.com/css2?family=Oswald:wght@400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/oswald/OFL.txt"
+  },
+  {
+    "family": "Outfit",
+    "css": "https://fonts.googleapis.com/css2?family=Outfit:wght@400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/outfit/OFL.txt"
+  },
+  {
+    "family": "Overpass",
+    "css": "https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/overpass/OFL.txt"
+  },
+  {
+    "family": "Pacifico",
+    "css": "https://fonts.googleapis.com/css2?family=Pacifico:wght@400&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/pacifico/OFL.txt"
+  },
+  {
+    "family": "Patrick Hand",
+    "css": "https://fonts.googleapis.com/css2?family=Patrick%20Hand:wght@400&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/patrickhand/OFL.txt"
+  },
+  {
+    "family": "Playfair Display",
+    "css": "https://fonts.googleapis.com/css2?family=Playfair%20Display:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/playfairdisplay/OFL.txt"
+  },
+  {
+    "family": "Plus Jakarta Sans",
+    "css": "https://fonts.googleapis.com/css2?family=Plus%20Jakarta%20Sans:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/plusjakartasans/OFL.txt"
+  },
+  {
+    "family": "Poppins",
+    "css": "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/poppins/OFL.txt"
+  },
+  {
+    "family": "Prata",
+    "css": "https://fonts.googleapis.com/css2?family=Prata:wght@400&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/prata/OFL.txt"
+  },
+  {
+    "family": "PT Sans",
+    "css": "https://fonts.googleapis.com/css2?family=PT%20Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/ptsans/OFL.txt"
+  },
+  {
+    "family": "PT Serif",
+    "css": "https://fonts.googleapis.com/css2?family=PT%20Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/ptserif/OFL.txt"
+  },
+  {
+    "family": "Public Sans",
+    "css": "https://fonts.googleapis.com/css2?family=Public%20Sans:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/publicsans/OFL.txt"
+  },
+  {
+    "family": "Quicksand",
+    "css": "https://fonts.googleapis.com/css2?family=Quicksand:wght@400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/quicksand/OFL.txt"
+  },
+  {
+    "family": "Raleway",
+    "css": "https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/raleway/OFL.txt"
+  },
+  {
+    "family": "Readex Pro",
+    "css": "https://fonts.googleapis.com/css2?family=Readex%20Pro:wght@400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/readexpro/OFL.txt"
+  },
+  {
+    "family": "Red Hat Display",
+    "css": "https://fonts.googleapis.com/css2?family=Red%20Hat%20Display:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/redhatdisplay/OFL.txt"
+  },
+  {
+    "family": "Red Hat Text",
+    "css": "https://fonts.googleapis.com/css2?family=Red%20Hat%20Text:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/redhattext/OFL.txt"
+  },
+  {
+    "family": "Righteous",
+    "css": "https://fonts.googleapis.com/css2?family=Righteous:wght@400&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/righteous/OFL.txt"
+  },
+  {
+    "family": "Roboto",
+    "css": "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/roboto/OFL.txt"
+  },
+  {
+    "family": "Roboto Mono",
+    "css": "https://fonts.googleapis.com/css2?family=Roboto%20Mono:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/robotomono/OFL.txt"
+  },
+  {
+    "family": "Roboto Slab",
+    "css": "https://fonts.googleapis.com/css2?family=Roboto%20Slab:wght@400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/apache/robotoslab/LICENSE.txt"
+  },
+  {
+    "family": "Rubik",
+    "css": "https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/rubik/OFL.txt"
+  },
+  {
+    "family": "Sora",
+    "css": "https://fonts.googleapis.com/css2?family=Sora:wght@400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/sora/OFL.txt"
+  },
+  {
+    "family": "Source Code Pro",
+    "css": "https://fonts.googleapis.com/css2?family=Source%20Code%20Pro:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/sourcecodepro/OFL.txt"
+  },
+  {
+    "family": "Source Sans 3",
+    "css": "https://fonts.googleapis.com/css2?family=Source%20Sans%203:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/sourcesans3/OFL.txt"
+  },
+  {
+    "family": "Source Serif 4",
+    "css": "https://fonts.googleapis.com/css2?family=Source%20Serif%204:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/sourceserif4/OFL.txt"
+  },
+  {
+    "family": "Space Grotesk",
+    "css": "https://fonts.googleapis.com/css2?family=Space%20Grotesk:wght@400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/spacegrotesk/OFL.txt"
+  },
+  {
+    "family": "Space Mono",
+    "css": "https://fonts.googleapis.com/css2?family=Space%20Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/spacemono/OFL.txt"
+  },
+  {
+    "family": "Spectral",
+    "css": "https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/spectral/OFL.txt"
+  },
+  {
+    "family": "Syne",
+    "css": "https://fonts.googleapis.com/css2?family=Syne:wght@400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/syne/OFL.txt"
+  },
+  {
+    "family": "Ubuntu",
+    "css": "https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ufl/ubuntu/UFL.txt"
+  },
+  {
+    "family": "Unbounded",
+    "css": "https://fonts.googleapis.com/css2?family=Unbounded:wght@400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/unbounded/OFL.txt"
+  },
+  {
+    "family": "Urbanist",
+    "css": "https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/urbanist/OFL.txt"
+  },
+  {
+    "family": "Vollkorn",
+    "css": "https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/vollkorn/OFL.txt"
+  },
+  {
+    "family": "Work Sans",
+    "css": "https://fonts.googleapis.com/css2?family=Work%20Sans:ital,wght@0,400..700;1,400..700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/worksans/OFL.txt"
+  },
+  {
+    "family": "Zilla Slab",
+    "css": "https://fonts.googleapis.com/css2?family=Zilla%20Slab:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/zillaslab/OFL.txt"
+  }
+]

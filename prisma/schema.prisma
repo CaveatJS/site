@@ -1,0 +1,116 @@
+generator client {
+  provider = "prisma-client"
+  output = "../src/generated/prisma"
+}
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  id String @id
+  name String
+  email String @unique
+  emailVerified Boolean @default(false)
+  image String?
+  createdAt DateTime @default(now()) @db.Timestamptz(3)
+  updatedAt DateTime @updatedAt @db.Timestamptz(3)
+  sessions Session[]
+  accounts Account[]
+  publication Publication?
+  @@map("users")
+}
+model Session {
+  id String @id
+  expiresAt DateTime @db.Timestamptz(3)
+  token String @unique
+  createdAt DateTime @default(now()) @db.Timestamptz(3)
+  updatedAt DateTime @updatedAt @db.Timestamptz(3)
+  ipAddress String?
+  userAgent String?
+  userId String
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@index([userId])
+  @@map("sessions")
+}
+model Account {
+  id String @id
+  accountId String
+  providerId String
+  userId String
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  accessToken String?
+  refreshToken String?
+  idToken String?
+  accessTokenExpiresAt DateTime? @db.Timestamptz(3)
+  refreshTokenExpiresAt DateTime? @db.Timestamptz(3)
+  scope String?
+  password String?
+  createdAt DateTime @default(now()) @db.Timestamptz(3)
+  updatedAt DateTime @updatedAt @db.Timestamptz(3)
+  @@unique([providerId, accountId])
+  @@index([userId])
+  @@map("accounts")
+}
+model Verification {
+  id String @id
+  identifier String
+  value String
+  expiresAt DateTime @db.Timestamptz(3)
+  createdAt DateTime @default(now()) @db.Timestamptz(3)
+  updatedAt DateTime @updatedAt @db.Timestamptz(3)
+  @@index([identifier])
+  @@map("verifications")
+}
+model RateLimit {
+  id String @id @default(cuid())
+  key String @unique
+  count Int
+  lastRequest BigInt
+  @@map("rate_limits")
+}
+model Publication {
+  id Int @id @default(1)
+  ownerId String @unique
+  owner User @relation(fields: [ownerId], references: [id], onDelete: Restrict)
+  name String @default("My publication")
+  description String @default("")
+  author String @default("")
+  accent String @default("#315b50")
+  font String @default("serif")
+  resendKey String?
+  senderEmail String?
+  segmentId String?
+  sendingReady Boolean @default(false)
+  updatedAt DateTime @updatedAt @db.Timestamptz(3)
+  @@map("publication")
+}
+model Post {
+  id String @id @default(cuid())
+  title String @default("")
+  slug String @unique
+  content Json @default("{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\"}]}")
+  revision Int @default(0)
+  publishedTitle String?
+  publishedContent Json?
+  publishedAt DateTime? @db.Timestamptz(3)
+  createdAt DateTime @default(now()) @db.Timestamptz(3)
+  updatedAt DateTime @updatedAt @db.Timestamptz(3)
+  delivery Delivery?
+  @@index([publishedAt(sort: Desc)])
+  @@index([updatedAt(sort: Desc)])
+  @@map("posts")
+}
+model Delivery {
+  id String @id @default(cuid())
+  postId String @unique
+  post Post @relation(fields: [postId], references: [id], onDelete: Restrict)
+  broadcastId String? @unique
+  state String @default("preparing")
+  subject String
+  html String
+  recipientCount Int
+  error String?
+  createdAt DateTime @default(now()) @db.Timestamptz(3)
+  updatedAt DateTime @updatedAt @db.Timestamptz(3)
+  @@map("deliveries")
+}

@@ -1,0 +1,54 @@
+name: Example publication
+description: Share a new Caveat design, preview, or idea for the examples gallery.
+title: "Example: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Share a starting point for other writers. An idea is welcome before the code is ready.
+        Submissions are reviewed before appearing in the gallery. See CONTRIBUTING.md for the code workflow.
+  - type: input
+    id: name
+    attributes:
+      label: Example name
+      placeholder: e.g. The Reading Room
+    validations:
+      required: true
+  - type: textarea
+    id: direction
+    attributes:
+      label: Audience and design direction
+      description: Describe the subject, layout, fonts, and colours. What makes this useful to other writers?
+    validations:
+      required: true
+  - type: textarea
+    id: preview
+    attributes:
+      label: Preview or screenshots
+      description: Add a public preview link or paste screenshots. Use fictional sample content.
+  - type: input
+    id: source
+    attributes:
+      label: Source code or pull request
+      description: Optional if this is still an idea.
+  - type: input
+    id: credit
+    attributes:
+      label: Creator credit
+      description: Your preferred public name and optional profile link.
+    validations:
+      required: true
+  - type: textarea
+    id: licences
+    attributes:
+      label: Asset licences
+      description: List any third-party fonts, images, or other assets and their licences. Write None if there are no external assets.
+    validations:
+      required: true
+  - type: checkboxes
+    id: permission
+    attributes:
+      label: Permission to share
+      options:
+        - label: I have permission to share this work. Any accepted code I contribute will use the repository licence, with third-party asset licences retained.
+          required: true

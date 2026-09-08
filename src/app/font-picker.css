@@ -1,0 +1,213 @@
+.font-picker > label {
+  display: block;
+  margin-bottom: 8px;
+}
+.font-picker-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: var(--paper);
+  color: var(--ink);
+  text-align: left;
+}
+.font-picker-trigger > span:last-child {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: var(--muted);
+}
+.font-picker > .font-description {
+  margin: 10px 0;
+}
+.font-dialog {
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 28px;
+  width: min(860px, calc(100% - 32px));
+  max-height: min(820px, 92dvh);
+  overflow: auto;
+}
+.font-dialog::backdrop {
+  background: #132c2480;
+}
+.font-dialog h2 {
+  margin: 0;
+  font-size: 35px;
+}
+.font-dialog p {
+  max-width: none;
+}
+.font-dialog-intro {
+  color: var(--muted);
+  font-size: 13px;
+  margin: 12px 0 22px;
+}
+.font-search {
+  position: relative;
+}
+.font-search > svg {
+  position: absolute;
+  top: 15px;
+  left: 13px;
+  color: var(--muted);
+  pointer-events: none;
+}
+.font-dialog .font-search input {
+  width: 100%;
+  min-height: 46px;
+  padding-left: 39px;
+}
+.font-filters {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin: 16px 0 22px;
+}
+.font-filters button {
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--muted);
+  border-radius: 24px;
+  min-height: 36px;
+  padding: 7px 12px;
+  font-size: 11px;
+}
+.font-filters button[aria-pressed="true"] {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--paper);
+}
+.font-browser {
+  display: grid;
+  grid-template-columns: 235px minmax(0, 1fr);
+  gap: 25px;
+}
+.font-results {
+  min-width: 0;
+}
+.font-result-count {
+  font-size: 10px;
+  color: var(--muted);
+  margin-bottom: 9px;
+}
+.font-options {
+  max-height: 300px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 4px;
+  margin: -4px;
+}
+.font-options button {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  min-height: 58px;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  background: transparent;
+  text-align: left;
+  color: var(--ink);
+}
+.font-options button:hover {
+  background: var(--bg);
+}
+.font-options button[aria-pressed="true"] {
+  background: #e7eddf;
+  border-color: #d4dfc8;
+}
+.font-options strong {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+}
+.font-options small {
+  display: block;
+  color: var(--muted);
+  font-size: 10px;
+  margin-top: 4px;
+}
+.font-empty {
+  font-size: 13px;
+  color: var(--muted);
+  padding: 16px 12px;
+  line-height: 1.6;
+}
+.font-candidate {
+  min-width: 0;
+}
+.font-candidate .font-preview {
+  min-height: 255px;
+  overflow-wrap: anywhere;
+}
+.font-candidate > .font-description {
+  margin: 12px 0 0;
+  line-height: 1.6;
+}
+.font-dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+.font-dialog-actions .button {
+  white-space: normal;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .font-dialog {
+    padding: 20px;
+    width: calc(100% - 20px);
+  }
+  .font-dialog h2 {
+    font-size: 30px;
+  }
+  .font-dialog-intro {
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+  .font-filters {
+    margin-bottom: 16px;
+    gap: 5px;
+  }
+  .font-filters button {
+    padding: 7px 10px;
+  }
+  .font-browser {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+  }
+  .font-options {
+    max-height: 154px;
+  }
+  .font-candidate .font-preview {
+    min-height: 0;
+    padding: 18px;
+  }
+  .font-candidate .font-preview h3 {
+    font-size: 25px;
+  }
+  .font-candidate .font-preview-copy {
+    font-size: 16px;
+  }
+  .font-dialog-actions {
+    position: sticky;
+    bottom: -20px;
+    padding: 14px 0;
+    margin-top: 18px;
+    background: var(--paper);
+  }
+}

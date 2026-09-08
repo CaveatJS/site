@@ -1,0 +1,10 @@
+/* Your public website styles belong here.
+ * This file loads after Caveat's defaults. Scope rules to .publication-site
+ * to keep the writing dashboard and email templates unchanged.
+ * See /examples for colour starters and /docs#custom-design for React edits.
+ *
+ * Available tokens:
+ * --publication-background, --publication-ink, --publication-muted,
+ * --publication-surface, --publication-line, --publication-width, --accent.
+ * Fonts remain selectable in Settings.
+ */
