@@ -18,7 +18,7 @@ export default function About() {
         </div>
         <p className="about-signature">
           {site.author}
-          <span aria-hidden="true">*</span>
+          <span aria-hidden="true">✳</span>
         </p>
       </main>
       <Footer />

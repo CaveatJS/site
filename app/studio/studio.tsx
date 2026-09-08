@@ -130,8 +130,8 @@ export default function Studio({
     <div className="studio-shell">
       <aside className="studio-sidebar">
         <Link href="/" className="wordmark">
-          {publicationName}
-          <span aria-hidden="true">*</span>
+          {publicationName === "Caveat" ? "caveat" : publicationName}
+          <span aria-hidden="true">✳</span>
         </Link>
         <div className="studio-caption">Your publication</div>
         <button

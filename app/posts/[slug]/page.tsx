@@ -57,7 +57,7 @@ export default async function Article({
           </div>
           <div className="article-end">
             <span className="asterisk" aria-hidden="true">
-              *
+              ✳
             </span>
             <Link href="/">Explore the journal →</Link>
           </div>

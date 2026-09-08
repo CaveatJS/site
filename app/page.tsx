@@ -64,7 +64,7 @@ export default async function Home() {
             </div>
             <aside className="margin-note">
               <span className="asterisk" aria-hidden="true">
-                *
+                ✳
               </span>
               <h2>A note in the margin</h2>
               <p>{site.about}</p>

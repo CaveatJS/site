@@ -5,8 +5,8 @@ export function Header() {
   return (
     <header className="site-header">
       <Link className="wordmark" href="/">
-        {site.name}
-        <span aria-hidden="true">*</span>
+        {site.name === "Caveat" ? "caveat" : site.name}
+        <span aria-hidden="true">✳</span>
       </Link>
       <nav aria-label="Main navigation">
         <Link href="/">Journal</Link>
