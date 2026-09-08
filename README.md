@@ -112,3 +112,25 @@ After an application release, update the initializer revision, run its tests and
 This release replaces the development-only Markdown editor with a database-backed owner dashboard. Original sample Markdown files remain in `content/posts`; they are not automatically published or imported. Before updating an existing publication, export or retain its Markdown files and recreate the desired posts in the editor. `/studio` redirects to the new dashboard, and `/posts/:slug` redirects to `/p/:slug`; existing content must be imported with matching slugs for old article URLs to resolve. There is no automatic content migration in this release.
 
 Local verification is not a live Vercel or Resend delivery verification. Those checks require a deployed Prisma Postgres database and a verified sending domain.
+
+## Original starter screenshots
+
+Captured from the local Markdown starter with its bundled sample posts.
+
+### Write and manage posts
+
+Keep drafts and published essays together. Edit your writing, author credits, publication date, and post URL in the browser.
+
+![Caveat editor showing draft and published posts, author credits, date, URL, and Markdown writing](https://raw.githubusercontent.com/CaveatJS/site/main/docs/screenshots/editor.png)
+
+### Preview your writing
+
+Switch to Preview to see headings, links, inline code, and quotations rendered before publishing to your local website.
+
+![Caveat Markdown preview rendering an essay with headings, inline code, and a quotation](https://raw.githubusercontent.com/CaveatJS/site/main/docs/screenshots/preview.png)
+
+### Give every essay a home
+
+A dedicated reading page brings together the title, description, author, date, reading time, and article text.
+
+![Caveat article page with its title, author, reading time, and essay typography](https://raw.githubusercontent.com/CaveatJS/site/main/docs/screenshots/article.png)
