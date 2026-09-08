@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { site } from "@/site.config";
+import { Icon } from "@/components/icon";
 
 export function Header() {
   return (
@@ -12,11 +13,11 @@ export function Header() {
         <Link href="/">Journal</Link>
         <Link href="/about">About</Link>
         <a href="/rss.xml">
-          RSS <span aria-hidden="true">↗</span>
+          <Icon name="rss" size={16} /> RSS
         </a>
         {process.env.NODE_ENV === "development" && (
           <Link className="studio-link" href="/studio">
-            Open editor <span aria-hidden="true">↗</span>
+            Open editor <Icon name="edit" size={16} />
           </Link>
         )}
       </nav>

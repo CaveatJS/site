@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import Markdown from "react-markdown";
 import { Header, Footer, DateLabel } from "@/components/shell";
 import { getPosts, readTime } from "@/lib/posts.mjs";
+import { Icon } from "@/components/icon";
 
 // New posts must be reachable immediately after publishing in the local editor.
 // The lookup below still rejects drafts and unknown slugs.
@@ -40,7 +41,7 @@ export default async function Article({
       <Header />
       <main id="main" className="article-page">
         <Link className="back-link" href="/">
-          ← Back to the journal
+          <Icon name="back" /> Back to the journal
         </Link>
         <article>
           <header className="article-header">
@@ -59,7 +60,7 @@ export default async function Article({
             <span className="asterisk" aria-hidden="true">
               ✳
             </span>
-            <Link href="/">Explore the journal →</Link>
+            <Link href="/">Explore the journal <Icon name="forward" /></Link>
           </div>
         </article>
       </main>

@@ -114,6 +114,9 @@ a:hover {
 }
 .site-header nav a {
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
 }
 .site-header .studio-link {
   background: var(--wash);
@@ -202,6 +205,7 @@ a:hover {
   font-size: 14px;
   font-weight: 550;
   display: inline-flex;
+  align-items: center;
   gap: 16px;
   margin: 12px 0 26px;
 }
@@ -274,9 +278,9 @@ a:hover {
   justify-content: space-between;
   gap: 20px;
 }
-.post-row h3 span {
-  font: 20px var(--sans);
+.post-row h3 .ui-icon {
   color: var(--accent);
+  margin-top: 7px;
 }
 .post-row p {
   font-size: 15px;
@@ -308,6 +312,20 @@ a:hover {
   font-size: 13px;
   text-decoration: none;
   color: var(--muted);
+}
+.ui-icon {
+  display: inline-block;
+  flex-shrink: 0;
+  vertical-align: middle;
+}
+.back-link,
+.article-end a,
+.margin-note a,
+.sidebar-bottom a,
+.success-message a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
 .article-header {
   margin: 42px 0 36px;

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Header, Footer, DateLabel } from "@/components/shell";
 import { getPosts, readTime } from "@/lib/posts.mjs";
 import { site } from "@/site.config";
+import { Icon } from "@/components/icon";
 
 export default async function Home() {
   const posts = await getPosts();
@@ -27,7 +28,7 @@ export default async function Home() {
                   <h2>{featured.title}</h2>
                   <p>{featured.description}</p>
                   <span className="read-link">
-                    Read the essay <span aria-hidden="true">↗</span>
+                    Read the essay <Icon name="arrow" />
                   </span>
                 </Link>
                 <div className="post-credit">
@@ -51,7 +52,7 @@ export default async function Home() {
                     <Link href={`/posts/${post.slug}`} className="article-link">
                       <h3>
                         {post.title}
-                        <span aria-hidden="true">↗</span>
+                        <Icon name="arrow" size={22} />
                       </h3>
                       <p>{post.description}</p>
                     </Link>
@@ -69,13 +70,13 @@ export default async function Home() {
               <h2>A note in the margin</h2>
               <p>{site.about}</p>
               <Link href="/about">
-                About this publication <span aria-hidden="true">↗</span>
+                About this publication <Icon name="arrow" size={16} />
               </Link>
               <div className="feed-note">
                 <h3>Keep reading.</h3>
                 <p>Follow new essays in your favourite feed reader.</p>
                 <a href="/rss.xml">
-                  Get the RSS feed <span aria-hidden="true">↗</span>
+                  Get the RSS feed <Icon name="rss" size={16} />
                 </a>
               </div>
             </aside>

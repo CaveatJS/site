@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import Markdown from "react-markdown";
+import { Icon } from "@/components/icon";
 
 type Post = {
   slug: string;
@@ -139,7 +140,7 @@ export default function Studio({
           onClick={() => select(blank(), true)}
           disabled={saving}
         >
-          + New post
+          <Icon name="add" /> New post
         </button>
         <div className="sidebar-heading">
           <h2>All posts</h2>
@@ -176,7 +177,7 @@ export default function Studio({
                 event.preventDefault();
             }}
           >
-            ← View publication
+            <Icon name="back" size={16} /> View publication
           </Link>
         </div>
       </aside>
@@ -200,6 +201,7 @@ export default function Studio({
               onClick={() => setPreview(!preview)}
               aria-pressed={preview}
             >
+              <Icon name={preview ? "edit" : "preview"} />
               {preview ? "Write" : "Preview"}
             </button>
             {!post.published && (
@@ -234,7 +236,7 @@ export default function Studio({
                   target="_blank"
                   rel="noreferrer"
                 >
-                  View post ↗
+                  View post <Icon name="arrow" size={16} />
                 </a>
               )}
             </p>
