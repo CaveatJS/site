@@ -1,27 +1,51 @@
 # Caveat
 
-An open-source publishing app with a simple editor, an editable website, and email delivery—on infrastructure you own.
+A runnable, open-source publication starter. Your website is the publication; RSS is included, and email can be added later.
 
-The website is the publication. Email is a distribution channel.
+## Start writing
 
-## Repositories
+Requires Node.js 20.9 or newer.
 
-- **[site](https://github.com/Caveat-Newsletter/site)** (this repository): the actual publishing application, including the public website, editor, subscribers, and email integration.
-- **[caveat-create](https://github.com/Caveat-Newsletter/caveat-create)**: the npm initializer that will create a publication from a versioned release of this application.
+```sh
+npm install
+npm run dev
+```
 
-Developer installation and guided online deployment should produce the same application. This repository is the source of truth for that application.
+Open [localhost:3000](http://localhost:3000) for your publication, or [localhost:3000/studio](http://localhost:3000/studio) for the editor. The terminal prints the port if 3000 is already in use.
 
-## Initial scope
+In the editor, create a post, enter a title and some writing, then choose **Save draft** or **Publish to website**. Preview renders your Markdown before you publish. Publication here means updating your local website; deploy again to update a hosted copy.
 
-- One ready-made publication with a browser editor.
-- Independent web publishing and email sending.
-- One polished, editable theme and an RSS feed.
-- Publication identity and support for multiple credited authors.
-- Portable content and subscriber exports.
-- One email provider to start, with a contained integration.
+## What's included
 
-Discovery networks, component registries, and learning tools are future possibilities.
+- A responsive publication homepage, article pages, and about page.
+- A local browser editor with Markdown preview, draft/published status, and multiple author credits.
+- Posts saved as portable `.md` files in `content/posts`. They survive restarts and can be edited directly in your favourite editor.
+- An RSS feed at `/rss.xml`, with drafts excluded from public pages and the feed.
+- Sample essays and a private draft to help you get started.
 
-## Status
+Edit `site.config.ts` to change the publication name, author, description, and about text. Edit `app/globals.css` for colours, typography, and layout. Replace or remove the sample Markdown files when you're ready.
 
-Repository setup only. The application is not implemented yet.
+## Build and deploy
+
+```sh
+npm run build
+npm start
+```
+
+Set `SITE_URL` to your public domain before building so RSS and canonical links point to the right place. `.env.example` shows the setting. Deploy this project to a host supporting Next.js, such as Vercel, with `npm run build` as the build command.
+
+The editor and its write API are **development-only** and are unavailable in production. The development server binds to your computer's loopback interface. Public production pages contain the posts included at build time. Edit locally, then commit and redeploy to publish changes online.
+
+This first release does not include a hosted editor, subscriber database, email delivery, or authentication. It requires no database or email credentials to run. Keep drafts out of a public Git repository if their source text is confidential; excluding drafts from the website does not hide the repository's files.
+
+## Repository layout
+
+- `site` (this repository): the complete starter application.
+- [caveat-create](https://github.com/CaveatJS/caveat-create): the npm CLI that installs a pinned version of this application and its dependencies.
+
+## Checks
+
+```sh
+npm test
+npm run build
+```
